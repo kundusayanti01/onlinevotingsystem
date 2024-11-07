@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polling App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header>
+        <h1>Online Voting System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="form.html">Check Eligibility</a></li>
+                <li><a href="poll.html">Poll Results</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+       <div id="chart-container" style="max-width: 350px; margin: 0 auto">
+        <canvas id="myChart"></canvas>
+      <button id="refresh-button"  onclick="fetchData()">Refresh</button>
+        <a href="https://forms.gle/uw7BrVMNQqAifzKz9" target="_blank">
+        <button id="vote-button">Vote Now</button>
+      </a>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Online Voting System</p>
+    </footer>
+
+    <script src="poll.js"></script>
+  </body>
+</html>

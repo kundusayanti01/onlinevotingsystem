@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter Eligibility Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Online Voting System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="form.html">Check Eligibility</a></li>
+                <li><a href="poll.html">Poll Results</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="main-content">
+        <section class="form-section">
+            <h1>Eligibility Form</h1>
+            <form id="eligibilityForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="regNumber">Registration Number:</label>
+                <input type="text" id="regNumber" name="regNumber" placeholder="Enter your registration number" required>
+
+                <button type="button" onclick="checkEligibility()">Submit</button>
+            </form>
+            <br>
+            <p id="result"></p>
+            <br>
+             <a href="https://forms.gle/uw7BrVMNQqAifzKz9" target="_blank">
+        <button id="vote-button" style="display: none;" id="vn">Vote Now</button>
+      </a>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Online Voting System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
